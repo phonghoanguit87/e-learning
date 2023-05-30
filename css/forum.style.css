@@ -1,0 +1,67 @@
+body {
+    color: black !important;
+}
+
+ul ul {
+    list-style-type: none;
+}
+
+.nav__left .nav-link { 
+    padding: 0.5rem 0;
+}
+
+.dropdown-item {
+    color: #0d6efd;
+}
+
+.bg-gray {
+    background-color: #e8e5e5;
+}
+
+.topics__number {
+    text-align: center;
+}
+
+.topics th, th {
+    border-bottom: 2px solid gray;
+}
+
+.topics td {
+    border-bottom: 1px solid gray;
+    background-color: white;
+    padding: 15px 10px 0;
+}
+
+.latest__category--general {
+    background-color: coral;
+}
+
+.latest__category--technology {
+    background-color: rgb(241, 5, 163);
+}
+
+#offcanvasBottom {
+    background-color: white;
+}
+
+.grippie__header {
+    background-color: #0dcaf0;
+    padding: 0 16px;
+}
+
+.btn-post {
+    min-width: 150px;
+}
+
+#grippie {
+    display: block;
+    width: 100%;
+    height: 0px;
+    background-color: #1f01ff;
+    border: 1px solid #888;
+    cursor: row-resize;
+}
+
+.img-carousel {
+    height: 85px !important;
+}

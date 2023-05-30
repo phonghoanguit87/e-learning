@@ -1,0 +1,58 @@
+.topic__title--content > p,
+.lesson__title--content > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+/* css topic */
+.lnk-sesson,
+.lnk-topic {
+    text-decoration: none;
+}
+
+.lnk-sesson {
+    color: #807d7d;
+}
+
+.btn-collapse__topics {
+    background-color: transparent !important;
+    color: #000000 !important;
+}
+
+.cbk_topic {
+    border-radius: 10px !important;
+    margin-top: 4px;
+}
+
+.topic__title,
+.lesson__title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2px;
+}
+
+.topic__title--content {
+    width: calc(100% - 25px);
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#collapseLesson,
+#collapseTopics {
+    width: calc(100% + 16px);
+}
+
+.spn-radius {
+    border-radius: 20px;
+}
+
+.btn-back > span {
+    background-color: #dcd9d9 !important;
+}
+
+.btn-back > span:hover {
+    color: #0d6efd !important;
+}
+

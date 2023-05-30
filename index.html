@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Learning</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/elearning.ico">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/mdb.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/backToTop.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <!-- Mobile view (<= md) -->
+            <div class="d-lg-none">
+                <div class="row">
+                    <div class="d-flex flex-row align-items-center justify-content-between mt-2">
+                        <button class="btn btn-info btn-bar" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-header">
+                                <img src="./assets/images/elearning-mobile-bar-logo.png" class="img-fluid">
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="justify-content-center" id="navbarNavDropdown">
+                                    <ul class="navbar-nav cl-black">
+                                        <li class="nav-item">
+                                            <a class="btn btn-info nav-link active" aria-current="page" href="#">
+                                                <i class="fa fa-home"></i> Home
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="btn btn-info nav-link" href="#">
+                                                <i class="fa fa-info-circle"></i> Introduce</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="btn btn-info nav-link" href="#"><i class="fa fa-codepen"
+                                                    aria-hidden="true"></i> SDK / Tools</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="btn btn-info nav-link" href="#"><i class="fa fa-book"
+                                                    aria-hidden="true"></i> Course</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="btn btn-info nav-link" href="#"><i class="fa fa-question-circle"
+                                                    aria-hidden="true"></i> FQA</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="btn btn-info nav-link" href="./html/forum.html" role="button"><i
+                                                    class="fa fa-comments" aria-hidden="true"></i> Forum</a>
+                                        </li>
+                                        <li class="btn nav-item btn-mobile">
+                                            <a href="./html/sign-in.html"
+                                                class="btn btn-info btn-sm btn-border-radius-sm btn-radius-left mr-2 pr-2">LOG
+                                                IN</a>
+                                            <a href="./html/sign-up.html"
+                                                class="btn btn-info btn-sm btn-border-radius-sm btn-radius-right ms-2 ms-2">SIGN
+                                                UP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./assets/images/elearning-mobile-nav-logo.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex flex-row align-items-center justify-content-center banner mt-2">
+                        <div class="col-md-6 col-lg-4 text-center">
+                            <h2 class="text-muted">How to learn effectively and fast to become a professional
+                                developer?
+                            </h2>
+                            <button type="button" class="btn btn-info">READ MORE</button>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <img src="./assets/images/hero-banner.png" class="img-fluid banner--img"
+                                alt="Lear more do more">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End mobile view (<= md) -->
+            <!-- PC View (>= lg) -->
+            <div class="d-none d-lg-block">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+                        <div class="container-fluid px-0">
+                            <div class="pe-3 me-4 col-md-2 flex-fill">
+                                <img src="./assets/images/elearning-nav-logo.png" class="img-fluid elearning-logo">
+                            </div>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">
+                                            <i class="fa fa-home"></i> Home
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Introduce</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">SDK / Tools</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Course
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Quality Assurance</a></li>
+                                            <li><a class="dropdown-item" href="#">Test Engineering</a></li>
+                                            <li><a class="dropdown-item" href="#">Front End Developer</a></li>
+                                            <li><a class="dropdown-item" href="#">Backend Developer</a></li>
+                                            <li><a class="dropdown-item" href="#">Soft Skill</a></li>
+                                            <li><a class="dropdown-item" href="#">Agile</a></li>
+                                            <li><a class="dropdown-item" href="#">Security</a></li>
+                                            <li><a class="dropdown-item" href="#">API</a></li>
+                                            <li><a class="dropdown-item" href="#">Deep Learning</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">FQA</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./html/forum.html">Forum</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./html/sign-in.html"
+                                            class="btn btn-info btn-sm btn-border-radius-sm btn-radius-left mr-0 pr-2">LOG
+                                            IN</a>
+                                        <a href="./html/sign-up.html"
+                                            class="btn btn-info btn-sm btn-border-radius-sm btn-radius-right ms-0 ms-2">SIGN
+                                            UP</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="d-flex flex-row align-items-center justify-content-center banner">
+                        <div class="col-md-4">
+                            <h2 class="text-muted">How to learn effectively and fast to become professional developer?
+                            </h2>
+                            <button type="button" class="btn btn-info">READ MORE</button>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img src="./assets/images/hero-banner.png" class="img-fluid banner--img"
+                                alt="Learn more code more">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End PC View (>= lg) -->
+        </header>
+        <main>
+            <div class="row bg-green">
+                <!-- Mobile view (<= md) -->
+                <div class="d-lg-none">
+                    <div class="d-flex flex-row align-items-center justify-content-center banner py-5">
+                        <div class="col-md-6">
+                            <img src="./assets/images/courses/programming-principle.png" class="img-fluid rounded-start"
+                                alt="Automation test">
+                        </div>
+                        <div class="col-md-6 cl-white">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">
+                                    <i class="fa fa-newspaper-o"></i>
+                                    Flexible and extensible code...
+                                </h5>
+                                <p class="card-text">
+                                    You read this article, proving that you are a programmer and are looking to
+                                    learn
+                                    about programming principles...
+                                </p>
+                                <a href="#" class="btn btn-danger">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End mobile view (<= md) -->
+                <!-- PC View (>= lg) -->
+                <div class="d-none d-lg-flex">
+                    <div class="d-flex flex-row align-items-center justify-content-center banner mt-5">
+                        <div class="news">
+                            <h3>Flexible and extensible code with dependency Inversion principle</h3>
+                            <p>
+                                You read this article, proving that you are a programmer and are looking to learn
+                                about programming principles, more specifically the SOLID principle - a legendary
+                                principle in programming. Object Oriented Programming (OOP) world.
+                            </p>
+                            <div class="news__btn text-center">
+                                <a href="#"><span></span>READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End PC View (>= lg) -->
+            </div>
+            <div class="row">
+                <!-- Courses -->
+                <div class="col-md-6 col-lg-4 mt-5">
+                    <div class="card">
+                        <img src="./assets/images/courses/programming-basic.png" class="card-img-top"
+                            alt="Front End Developer">
+                        <div class="card-body cl-black">
+                            <h5 class="card-title">Programming Basic</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <div class="text-center">
+                                <a href="./html/" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-5">
+                    <div class="card">
+                        <img src="./assets/images/courses/python.png" class="card-img-top" alt="Front End Developer">
+                        <div class="card-body cl-black">
+                            <h5 class="card-title">Python</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-5">
+                    <div class="card">
+                        <img src="./assets/images/courses/word-press.png" class="card-img-top"
+                            alt="Front End Developer">
+                        <div class="card-body cl-black">
+                            <h5 class="card-title">Word Press</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-5">
+                    <div class="card">
+                        <img src="./assets/images/courses/html-css.png" class="card-img-top" alt="Front End Developer">
+                        <div class="card-body cl-black">
+                            <h5 class="card-title">HTML & CSS</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-5">
+                    <div class="card">
+                        <img src="./assets/images/courses/git.png" class="card-img-top" alt="Front End Developer">
+                        <div class="card-body cl-black">
+                            <h5 class="card-title">Git</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-5">
+                    <div class="card">
+                        <img src="./assets/images/courses/oca.png" class="card-img-top" alt="Front End Developer">
+                        <div class="card-body cl-black">
+                            <h5 class="card-title">OCA certification</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-default">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End courses -->
+            </div>
+        </main>
+        <footer>
+            <div class="bg-dark align-items-center justify-content-center">
+                <div class="row bg-dark">
+                    <div class="col-md-6 col-lg-4 pt-5 text-center">
+                        <img src="./assets/images/elearning-footer-logo.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 pt-4 footer-body-mobile">
+                                <h6 class="text-info">Cybozu VietNam</h6>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href="#">About US</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Tech Sharing</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">FQA</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./html/forum.html">Forum</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-6 col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-6 pt-4">
+                                        <div class="footer-body-mobile">
+                                            <h6 class="text-info">Cybozu Links</h6>
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Cybozu Global</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Cybozu Tech</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Cybozu Open Source Software</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 pt-4">
+                                        <div class="footer-body-mobile">
+                                            <h6 class="text-info">Follow Us</h6>
+                                            <ul class="nav flex-row justify-content-start lst-contact-icon">
+                                                <li class="nav-item">
+                                                    <a class="nav-link me-3" href="#"><i
+                                                            class="fa fa-facebook-square"></i></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link me-3" href="#"><i
+                                                            class="fa fa-twitter-square"></i></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link me-3" href="#"><i class="fa fa-envelope"></i></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link me-3" href="#"><i class="fa fa-map-marker"
+                                                            aria-hidden="true"></i> </i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-dark">
+                    <div class="container-fluid">
+                        <div class="bg-dark m-0 text-center pt-3">
+                            <p class="copy-right">Copyright © 2023 Cybozu Vietnam Co., Ltd. All Rights Reserved</p>
+                            <a id="back-to-top" href="#" role="button"><i class="fa fa-chevron-up"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

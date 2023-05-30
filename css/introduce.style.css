@@ -1,0 +1,60 @@
+.banner {
+    background: linear-gradient(rgba(249, 248, 248, 0.5), #2bbbad), url("../assets/images/banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh !important;
+    text-align: center;
+}
+
+.banner__content {
+    padding-top: 150px;
+}
+
+.banner__content,
+.course__title {
+    color: rgb(255, 255, 255);
+    text-shadow: #FC0 1px 0 10px;
+}
+
+/* silde */
+@media (max-width: 767px) {
+    .course .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .course .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.course .carousel-inner .carousel-item.active,
+.course .carousel-inner .carousel-item-next,
+.course .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .course .carousel-inner .carousel-item-end.active,
+    .course .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .course .carousel-inner .carousel-item-start.active,
+    .course .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.course .carousel-inner .carousel-item-end,
+.course .carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+.course  .card-img-overlay {
+    color: rgb(203, 200, 198);
+    padding-top: 120px;
+    text-shadow: #FC0 1px 0 10px;
+}

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Learning - Course</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/elearning.ico">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/mdb.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/asideBar.css">
+    <link rel="stylesheet" href="../css/course.style.css">
+
+    <!-- js -->
+    <script src="../assets/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/backToTop.js"></script>
+    <script src="../js/course.js"></script>
+    <script src="../js/asideBar.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#footer").load("common/footer.html #footer");
+        });
+    </script>
+</head>
+
+<body id="body-pd">
+    <div class="container-fluid">
+        <header class="header bg-dark" id="header">
+            <div class="col-md-2 flex-fill">
+                <div class="header_toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+            <div class="col-md-8 flex-fill">
+                <!-- Mobile view (<= md) -->
+                <div class="d-lg-none">
+                    <div class="d-flex align-items-center justify-content-end pt-1 ps-5">
+                        <span class="text-info">Phong Hoang</span>
+                        <img src="../assets/images/user.png" alt="" class="img-fluid ps-2">
+                    </div>
+                </div>
+                <!-- End mobile view (<= md) -->
+
+                <!-- PC View (>= lg) -->
+                <div class="d-none d-lg-block">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <i class="fa fa-home"></i> Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Introduce</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">SDK / Tools</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Course
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Quality Assurance</a></li>
+                                        <li><a class="dropdown-item" href="#">Test Engineering</a></li>
+                                        <li><a class="dropdown-item" href="#">Front End Developer</a></li>
+                                        <li><a class="dropdown-item" href="#">Backend Developer</a></li>
+                                        <li><a class="dropdown-item" href="#">Soft Skill</a></li>
+                                        <li><a class="dropdown-item" href="#">Agile</a></li>
+                                        <li><a class="dropdown-item" href="#">Security</a></li>
+                                        <li><a class="dropdown-item" href="#">API</a></li>
+                                        <li><a class="dropdown-item" href="#">Deep Learning</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FQA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Forum</a>
+                                </li>
+                                <li class="nav-item pt-1 ps-5">
+                                    <span class="text-info">Phong Hoang</span>
+                                    <img src="../assets/images/user.png" alt="Phong Hoang" class="img-fluid ps-1">
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!-- End PC View (>= lg) -->
+            </div>
+
+            <!-- aside nav bar-->
+            <div class="aside-bar" id="aside-bar">
+                <nav class="nav">
+                    <div>
+                        <a href="#" class="nav_logo">
+                            <img src="../assets/images/elearning-aside-bar.ico" alt="">
+                            <span class="nav_logo-name">E Learning</span>
+                        </a>
+                        <div class="nav_list">
+                            <a href="#" class="nav_link active">
+                                <i class='bx bx-grid-alt nav_icon'></i>
+                                <span class="nav_name">Dashboard</span>
+                            </a>
+                            <a href="#" class="nav_link">
+                                <i class='bx bx-group nav_icon'></i>
+                                <span class="nav_name">Groups</span>
+                            </a>
+                            <a href="#" class="nav_link">
+                                <i class='bx bx-message-square-detail nav_icon'></i>
+                                <span class="nav_name">Messages</span>
+                            </a> <a href="#" class="nav_link">
+                                <i class='bx bx-bookmark nav_icon'></i>
+                                <span class="nav_name">Bookmark</span>
+                            </a>
+                            <a href="#" class="nav_link">
+                                <i class='bx bx-folder nav_icon'></i>
+                                <span class="nav_name">Files</span>
+                            </a>
+                            <a href="#" class="nav_link">
+                                <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+                                <span class="nav_name">Stats</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav_link">
+                        <i class='bx bx-log-out nav_icon'></i>
+                        <span class="nav_name">SignOut</span>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="bg-light">
+                <div class="row">
+                    <div class="banner">
+                        <div class="banner__content flex flex-wrap">
+                            <h1 class="text-light">Linux Basic Course</h1>
+                            <div class="banner__link">
+                                <a class="anchor-course-points" href="#learndash-course-content">
+                                    Course details <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="description p-5">
+                                <p>
+                                    Linux is a major force in computing technology, powering everything from mobile
+                                    phones and personal computers to supercomputers and servers. The job of a
+                                    systems
+                                    administrator is to manage the operations of a computer system like maintain,
+                                    enhance, create user account/report, taking backups using Linux tools and
+                                    command-line interface tools. Most computing devices are powered by Linux
+                                    because of
+                                    its high stability, high security, and open-source environment.
+                                </p>
+                                <p>
+                                    Linux system administration is one of the most in-demand skills in IT. Whether
+                                    you’re looking for expert prep for the Linux Foundation Certified System
+                                    Administration certification, need training to help start a new Linux IT career,
+                                    transition to Linux from another platform, or you’re just brushing up on your
+                                    sysadmin skills, this course will teach you everything you need to know.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="topic px-5 pt-5">
+                                <a class="topic__title lnk-topic toggle-" data-bs-toggle="collapse" href="#collapseLesson"
+                                    role="button" aria-expanded="false" aria-controls="collapseLesson">
+                                    <div class="topic__title--content">
+                                        <span><i class="fa fa-angle-down" aria-hidden="true"></i> Introduction to
+                                            Linux</span>
+                                        <span>
+                                            <span class="ld-item-component">7 Topics</span>
+                                            <span class="ld-sep">|</span>
+                                            <span class="ld-item-component">1 Quiz </span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                    </div>
+                                </a>
+                                <div class="collapse" id="collapseLesson">
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson" href="../html/lesson.html">
+                                            <div class="lesson__title--content">
+                                                <span text-muted>The UNIX Heritage</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Linux and the Open Source Community</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Linux Distributions</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Installing Linux</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Configuring the Linux Environment</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Configuring the Linux Desktop Experience</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Working with the Linux Server</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Quiz</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="topic px-5 pt-5 pb-5">
+                                <a class="topic__title lnk-topic" data-bs-toggle="collapse" href="#collapseTopics"
+                                    role="button" aria-expanded="false" aria-controls="collapseTopics">
+                                    <div class="topic__title--content">
+                                        <span>
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                             Linux Fundamentals</span>
+                                        <span>
+                                            <span class="ld-item-component">14 Topics</span>
+                                            <span class="ld-sep">|</span>
+                                            <span class="ld-item-component">3 Quiz </span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                    </div>
+                                </a>
+                                <div class="collapse" id="collapseTopics">
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span text-muted>The Linux Directory Structure</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>The Shell</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Basic Linux Commands</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Getting Help at the Command Line</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Working with Directories</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Listing Files and Understanding LS Output</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>File and Directory Permissions</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Finding Files and Directories</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Viewing Files and the Nano Editor</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Editing Files in Vi</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Editing Files with Emacs</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Graphical Editors</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Deleting, Copying, Moving, and Renaming Files</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Quiz 1</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Quiz 2</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="lesson px-3">
+                                        <a class="lesson__title mt-1 lnk-sesson">
+                                            <div class="lesson__title--content">
+                                                <span>Final Quiz</span>
+                                            </div>
+                                            <div>
+                                                <input class="form-check-input cbk_topic" type="checkbox" value="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 aside-left">
+                        <div class="d-none d-lg-block pt-5">
+                            <div class="card m-4 p-4">
+                                <img src="../assets/images/courses/linux-basic/linux-course.png"
+                                    class="card-img-top px-3">
+                                <div class="card-body">
+                                    <div class="d-grid gap-2 mx-auto">
+                                        <span class="btn-secondary m-0 p-1 text-center spn-radius">In Progress</span>
+                                        <span class="btn-info m-0 p-1 text-center spn-radius">Continous</span>
+                                    </div>
+                                    <div class="ps-5">
+                                        <h4 class="fw-bold pt-4">Course includes</h4>
+                                        <div class="pt-2">
+                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                            <span class="ps-3">2 Lessions</span>
+                                        </div>
+                                        <div class="pt-2">
+                                            <i class="fa fa-align-justify" aria-hidden="true"></i>
+                                            <span class="ps-3"> 21 Topics</span>
+                                        </div>
+                                        <div class="pt-2">
+                                            <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                                            <span class="ps-3"> 3 Quizzes</span>
+                                        </div>
+                                        <div class="pt-2">
+                                            <i class="fa fa-certificate" aria-hidden="true"></i>
+                                            <span class="ps-3"> Course Certificate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer"></footer>
+    </div>
+</body>
+
+</html>

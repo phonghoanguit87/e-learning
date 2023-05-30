@@ -1,0 +1,119 @@
+<header id="header">
+    <!-- Mobile view (<= md) -->
+    <div class="d-lg-none">
+        <div class="row">
+            <div class="d-flex flex-row align-items-center justify-content-between mt-2">
+                <button class="btn btn-info btn-bar" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" tabindex="-1"
+                    id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <img src="../assets/images/elearning-mobile-bar-logo.png" class="img-fluid">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="justify-content-center" id="navbarNavDropdown">
+                            <ul class="navbar-nav cl-black">
+                                <li class="nav-item">
+                                    <a class="btn btn-info nav-link active" aria-current="page" href="#">
+                                        <i class="fa fa-home"></i> Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-info nav-link" href="#">
+                                        <i class="fa fa-info-circle"></i> Introduce</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-info nav-link" href="#"><i class="fa fa-codepen"
+                                            aria-hidden="true"></i> SDK / Tools</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-info nav-link" href="#"><i class="fa fa-book"
+                                            aria-hidden="true"></i> Course</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-info nav-link" href="#"><i class="fa fa-question-circle"
+                                            aria-hidden="true"></i> FQA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-info nav-link" href="./html/forum.html"><i
+                                            class="fa fa-comments" aria-hidden="true"></i> Forum</a>
+                                </li>
+                                <li class="btn nav-item btn-mobile">
+                                    <a href="./html/sign-in.html"
+                                        class="btn btn-info btn-sm btn-border-radius-sm btn-radius-left mr-2 pr-2">LOG IN</a>
+                                    <a href="./html/sign-up.html"
+                                        class="btn btn-info btn-sm btn-border-radius-sm btn-radius-right ms-2 ms-2">SIGN UP</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="../assets/images/elearning-mobile-nav-logo.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End mobile view (<= md) -->
+    <!-- PC View (>= lg) -->
+    <div class="d-none d-lg-block">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+                <div class="container-fluid px-0">
+                    <div class="pe-3 me-4 col-md-2 flex-fill">
+                        <img src="../assets/images/elearning-nav-logo.png" class="img-fluid elearning-logo">
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    <i class="fa fa-home"></i> Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Introduce</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SDK / Tools</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Course
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Quality Assurance</a></li>
+                                    <li><a class="dropdown-item" href="#">Test Engineering</a></li>
+                                    <li><a class="dropdown-item" href="#">Front End Developer</a></li>
+                                    <li><a class="dropdown-item" href="#">Backend Developer</a></li>
+                                    <li><a class="dropdown-item" href="#">Soft Skill</a></li>
+                                    <li><a class="dropdown-item" href="#">Agile</a></li>
+                                    <li><a class="dropdown-item" href="#">Security</a></li>
+                                    <li><a class="dropdown-item" href="#">API</a></li>
+                                    <li><a class="dropdown-item" href="#">Deep Learning</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FQA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Forum</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./html/sign-in.html"
+                                    class="btn btn-info btn-sm btn-border-radius-sm btn-radius-left mr-0 pr-2">LOG IN</a>
+                                <a href="./html/sign-up.html"
+                                    class="btn btn-info btn-sm btn-border-radius-sm btn-radius-right ms-0 ms-2">SIGN UP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End PC View (>= lg) -->
+</header>

@@ -1,0 +1,12 @@
+.banner {
+    background: linear-gradient(rgba(5, 5, 5, 0.5), #2bbbad), url("../assets/images/courses/linux-basic/linux-course.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh !important;
+    text-align: center;
+}
+
+.banner__content {
+    margin-top: 16%;
+}

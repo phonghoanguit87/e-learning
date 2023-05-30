@@ -1,0 +1,12 @@
+.modal {
+    display: block;
+}
+
+.modal-header,
+.modal-footer {
+    background-color: #2bbbad;
+}
+
+.btn-login {
+    width: 100%;
+}

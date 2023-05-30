@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Learning - Forum</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/elearning.ico">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../assets/bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/mdb.css">
+    <link rel="stylesheet" href="../css/forum.style.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/colorRandom.forum.js"></script>
+    <script src="../js/grippie.forum.js"></script>
+    <script src="../js/backToTop.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#header").load("common/header.html #header");
+            $("#footer").load("common/footer.html #footer");
+            $("#welcome").load("common/welcome.html #welcome");
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header id="header"></header>
+        <main>
+            <div class="row">
+                <div class="d-none d-lg-block col-lg-2 bg-gray">
+                    <nav id="navbar-example3" class="h-100 flex-column align-items-stretch px-4 py-5 border-end">
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item-1">Categories</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" data-bs-toggle="collapse" href="#collapseGeneral"
+                                    role="button" aria-expanded="false" aria-controls="collapseGeneral">
+                                    <span>General</span>
+                                </a>
+                                <a class="nav-link ms-3 my-1" href="#item-1-2">Announcements</a>
+                                <a class="nav-link ms-3 my-1" data-bs-toggle="collapse" href="#collapseTechnologies"
+                                    role="button" aria-expanded="false" aria-controls="collapseTechnologies">
+                                    <span>Technologies</span>
+                                </a>
+                            </nav>
+                            <a class="nav-link" href="#item-3">Tags</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-3-1">Tips</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-2">Workshop</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-2">Discussion</a>
+                            </nav>
+                            <a class="nav-link" href="#item-2">Others</a>
+                        </nav>
+                    </nav>
+                </div>
+
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card mb-3">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="../assets/images/topics/welcome.jpg"
+                                                    class="img-fluid rounded-start img-carousel" alt="">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <p class="card-title">Welcome to E Learning!</p>
+                                                    <span class="latest__category--general">General</span>
+                                                    <span class="latest__category--technology">Technology</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card mb-3">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="../assets/images/topics/devops.png"
+                                                    class="img-fluid rounded-start img-carousel" alt="">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <p class="card-title">DevOps Require and Testing Principles</p>
+                                                    <span class="latest__category--technology">Technology</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card mb-3">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="../assets/images/topics/performance_automation.webp"
+                                                    class="img-fluid rounded-start img-carousel" alt="">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <p class="card-title">Performance Testing, why not?</p>
+                                                    <span class="latest__category--general">General</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                       
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex flex-row align-items-baseline align-content-center sub-menu">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle nav-link" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            All categories
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">General</a></li>
+                                            <li><a class="dropdown-item" href="#">Automation</a></li>
+                                            <li><a class="dropdown-item" href="#">Programming</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle nav-link" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            All tags
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Tips</a></li>
+                                            <li><a class="dropdown-item" href="#">Work shop</a></li>
+                                            <li><a class="dropdown-item" href="#">Quick start</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Categories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Latest</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Unread (1)</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Top</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">My Posts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                        <i class="fa fa-plus" aria-hidden="true"></i> New topic
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 border-end">
+                            <div class="topic__list px-4 py-5">
+                                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                                    class="scrollspy-example-2" tabindex="0">
+                                    <div class="collapse" id="collapseGeneral">
+                                        <div class="px-3 py-2">
+                                            <a class="mt-1" data-bs-toggle="collapse" href="#collapseTopic1"
+                                                role="button" aria-expanded="true" aria-controls="collapseTopic">
+                                                <span text-muted>Welcome to E Learning</span>
+                                            </a>
+                                        </div>
+                                        <div class="px-3 py-2">
+                                            <a class="mt-1">
+                                                <span text-muted>The new update 03 / 2023</span>
+                                            </a>
+                                        </div>
+                                        <div class="px-3 py-2">
+                                            <a class="mt-1" data-bs-toggle="collapse" href="#collapseTopic2"
+                                                role="button" aria-expanded="false" aria-controls="collapseTopic2">
+                                                <span text-muted>API Post Problem</span>
+                                            </a>
+                                        </div>
+                                        <div class="px-3 py-2">
+                                            <a class="mt-1">
+                                                <span text-muted>Google Forms File Uploads</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                                    class="scrollspy-example-2" tabindex="0">
+                                    <div class="collapse" id="collapseTechnologies">
+                                        <div class="px-3 py-2">
+                                            <a class="mt-1" data-bs-toggle="collapse" href="#collapseTopic2"
+                                                role="button" aria-expanded="false" aria-controls="collapseTopic2">
+                                                <span text-muted>API Post Problem</span>
+                                            </a>
+                                        </div>
+                                        <div class="px-3 py-2">
+                                            <a class="mt-1">
+                                                <span text-muted>Google Forms File Uploads</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-8">
+                            <div class="collapse px-4 py-5" id="collapseTopic1">
+                                <div class="topic__content" id="welcome">
+                                </div>
+                            </div>
+                            <div class="collapse px-4 py-5" id="collapseTopic2">
+                                <div class="topic__content">
+                                    <div class="topic__content--question">
+                                        <p> Dear all,</p>
+                                        <p>
+                                            I am trying to add data thru API in my application. I am getting error
+                                            saying that A value does not exist in the datasource for look up. I have
+                                            checked the
+                                            datatsource lookup, the value is there, but still I cannot add record to the
+                                            app.
+
+                                            <span>Could you please help me suggest best solution?</span>
+                                        </p>
+                                        <p>Thank all ^^</p>
+                                    </div>
+                                    <div class="topic__comments">
+                                        <section class="gradient-custom">
+                                            <div class="container my-5 pt-3 pb-1">
+                                                <div class="row d-flex justify-content-center">
+                                                    <div class="card">
+                                                        <div class="card-body p-4">
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="d-flex flex-start">
+                                                                        <img class="rounded-circle shadow-1-strong me-3"
+                                                                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                                                                            alt="avatar" width="65" height="65" />
+                                                                        <div class="flex-grow-1 flex-shrink-1">
+                                                                            <div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center">
+                                                                                    <p class="mb-1">
+                                                                                        Maria Smantha <span
+                                                                                            class="small">-
+                                                                                            2 hours ago</span>
+                                                                                    </p>
+                                                                                    <a href="#!"><i
+                                                                                            class="fa fa-reply fa-xs"></i><span
+                                                                                            class="small">
+                                                                                            reply</span></a>
+                                                                                </div>
+                                                                                <p class="small mb-0">
+                                                                                    It is a long established fact that a
+                                                                                    reader will be distracted by
+                                                                                    the readable content of a page.
+                                                                                </p>
+                                                                            </div>
+
+                                                                            <div class="d-flex flex-start mt-4">
+                                                                                <a class="me-3" href="#">
+                                                                                    <img class="rounded-circle shadow-1-strong"
+                                                                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(11).webp"
+                                                                                        alt="avatar" width="65"
+                                                                                        height="65" />
+                                                                                </a>
+                                                                                <div class="flex-grow-1 flex-shrink-1">
+                                                                                    <div>
+                                                                                        <div
+                                                                                            class="d-flex justify-content-between align-items-center">
+                                                                                            <p class="mb-1">
+                                                                                                Simona Disa <span
+                                                                                                    class="small">- 3
+                                                                                                    hours
+                                                                                                    ago</span>
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <p class="small mb-0">
+                                                                                            letters, as opposed to using
+                                                                                            'Content here, content
+                                                                                            here',
+                                                                                            making it look like readable
+                                                                                            English.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="d-flex flex-start mt-4">
+                                                                                <a class="me-3" href="#">
+                                                                                    <img class="rounded-circle shadow-1-strong"
+                                                                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp"
+                                                                                        alt="avatar" width="65"
+                                                                                        height="65" />
+                                                                                </a>
+                                                                                <div class="flex-grow-1 flex-shrink-1">
+                                                                                    <div>
+                                                                                        <div
+                                                                                            class="d-flex justify-content-between align-items-center">
+                                                                                            <p class="mb-1">
+                                                                                                John Smith <span
+                                                                                                    class="small">-
+                                                                                                    4 hours
+                                                                                                    ago</span>
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <p class="small mb-0">
+                                                                                            the majority have suffered
+                                                                                            alteration in some form, by
+                                                                                            injected humour, or
+                                                                                            randomised
+                                                                                            words.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="d-flex flex-start mt-4">
+                                                                        <img class="rounded-circle shadow-1-strong me-3"
+                                                                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(12).webp"
+                                                                            alt="avatar" width="65" height="65" />
+                                                                        <div class="flex-grow-1 flex-shrink-1">
+                                                                            <div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center">
+                                                                                    <p class="mb-1">
+                                                                                        Natalie Smith <span
+                                                                                            class="small">-
+                                                                                            2 hours ago</span>
+                                                                                    </p>
+                                                                                    <a href="#!"><i
+                                                                                            class="fa fa-reply fa-xs"></i><span
+                                                                                            class="small">
+                                                                                            reply</span></a>
+                                                                                </div>
+                                                                                <p class="small mb-0">
+                                                                                    The standard chunk of Lorem Ipsum
+                                                                                    used
+                                                                                    since the 1500s is
+                                                                                    reproduced below for those
+                                                                                    interested.
+                                                                                    Sections 1.10.32 and
+                                                                                    1.10.33.
+                                                                                </p>
+                                                                            </div>
+
+                                                                            <div class="d-flex flex-start mt-4">
+                                                                                <a class="me-3" href="#">
+                                                                                    <img class="rounded-circle shadow-1-strong"
+                                                                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp"
+                                                                                        alt="avatar" width="65"
+                                                                                        height="65" />
+                                                                                </a>
+                                                                                <div class="flex-grow-1 flex-shrink-1">
+                                                                                    <div>
+                                                                                        <div
+                                                                                            class="d-flex justify-content-between align-items-center">
+                                                                                            <p class="mb-1">
+                                                                                                Lisa Cudrow <span
+                                                                                                    class="small">- 4
+                                                                                                    hours
+                                                                                                    ago</span>
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <p class="small mb-0">
+                                                                                            Cras sit amet nibh libero,
+                                                                                            in
+                                                                                            gravida nulla. Nulla vel
+                                                                                            metus
+                                                                                            scelerisque ante
+                                                                                            sollicitudin
+                                                                                            commodo. Cras purus odio,
+                                                                                            vestibulum in vulputate at,
+                                                                                            tempus viverra turpis.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="d-flex flex-start mt-4">
+                                                                                <a class="me-3" href="#">
+                                                                                    <img class="rounded-circle shadow-1-strong"
+                                                                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(29).webp"
+                                                                                        alt="avatar" width="65"
+                                                                                        height="65" />
+                                                                                </a>
+                                                                                <div class="flex-grow-1 flex-shrink-1">
+                                                                                    <div>
+                                                                                        <div
+                                                                                            class="d-flex justify-content-between align-items-center">
+                                                                                            <p class="mb-1">
+                                                                                                Maggie McLoan <span
+                                                                                                    class="small">- 5
+                                                                                                    hours
+                                                                                                    ago</span>
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <p class="small mb-0">
+                                                                                            a Latin professor at
+                                                                                            Hampden-Sydney College in
+                                                                                            Virginia,
+                                                                                            looked up one of the more
+                                                                                            obscure Latin words,
+                                                                                            consectetur
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="d-flex flex-start mt-4">
+                                                                                <a class="me-3" href="#">
+                                                                                    <img class="rounded-circle shadow-1-strong"
+                                                                                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp"
+                                                                                        alt="avatar" width="65"
+                                                                                        height="65" />
+                                                                                </a>
+                                                                                <div class="flex-grow-1 flex-shrink-1">
+                                                                                    <div>
+                                                                                        <div
+                                                                                            class="d-flex justify-content-between align-items-center">
+                                                                                            <p class="mb-1">
+                                                                                                John Smith <span
+                                                                                                    class="small">-
+                                                                                                    6 hours
+                                                                                                    ago</span>
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <p class="small mb-0">
+                                                                                            Autem, totam debitis
+                                                                                            suscipit
+                                                                                            saepe sapiente magnam
+                                                                                            officiis
+                                                                                            quaerat necessitatibus odio
+                                                                                            assumenda, perferendis quae
+                                                                                            iusto
+                                                                                            labore laboriosam minima
+                                                                                            numquam
+                                                                                            impedit quam dolorem!
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <div class="topic__comment--reply my-5 pb-5">
+                                            <form action="#" class="px-3">
+                                                <div class="mb-3">
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="@phong-hoang">
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="3" placeholder="your comment here!"></textarea>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <button type="submit" class="btn btn-primary">Reply</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+                aria-labelledby="offcanvasBottomLabel">
+                <div id="grippie" draggable="true" tabindex="1"></div>
+                <form id="topic__post">
+                    <div class="offcanvas-header grippie__header bg-gray">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Post new topic</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        <div class="mb-3">
+                            <input id="topic__title" class="form-control" type="text"
+                                placeholder="Type title, or paste a link here" aria-label="default input">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="topic__detail"
+                                placeholder="Type here. Use Markdown, BBCode, or HTML to format. Drag or paste images."
+                                rows="5"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-post">Post</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer id="footer"></footer>
+    </div>
+</body>
+
+</html>
